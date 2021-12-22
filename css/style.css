@@ -1,0 +1,582 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio v5.0.8 (https://startbootstrap.com/themes/stylish-portfolio)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro";
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.lead{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.enlarge-on-hover:hover{
+  -ms-transform:scale(1.1,1.1);
+  -webkit-transform:scale(1.1,1.1);
+  transform:scale(1.1,1.1);
+  -ms-transition-duration:.3s;
+  -webkit-transition-duration:.3s;
+  transition-duration:.3s
+}
+
+.enlarge-on-hover{
+  -ms-transition-duration:.3s;
+  -webkit-transition-duration:.3s;
+  transition-duration:.3s;
+}
+
+/* Map */
+.map {
+  height: 30rem;
+}
+
+@media (max-width: 992px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #343a40;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+/* Side Menu */
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 3;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  transition: all 0.4s ease 0s;
+  transform: translateX(250px);
+  background: rgba(0, 0, 0, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  font-size: 1.2rem;
+  background: rgba(52, 58, 64, 0.1);
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #fff;
+}
+
+.menu-toggle:hover {
+  background: #343a40;
+}
+
+footer.footer {
+  padding-bottom: 5rem;
+}
+
+a {
+  color: #2196f3;
+}
+
+a:hover, a:focus, a:active {
+  color: #0f72c1;
+}
+
+.btn-primary {
+  background-color: #1D809F !important;
+  border-color: #1D809F !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #155d74 !important;
+  border-color: #155d74 !important;
+}
+
+.btn-secondary {
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
+  color: #fff !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
+}
+
+.btn-dark {
+  color: #fff !important;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: #2196f3 !important;
+
+}
+
+.text-primary {
+  color: #2196f3 !important;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/golden_gate.jpg") top center;
+  background-size: cover;
+  background-color: #333;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 4.5em;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3)
+}
+
+#hero p {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+#hero div .vertical {
+  vertical-align: middle;
+  text-align: center;
+  opacity: 1;
+}
+
+.img-profile {
+  max-width: 250px;
+  max-height: 250px;
+  border: 0.5rem solid rgba(255, 255, 255, 0.6);
+  vertical-align: middle;
+  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.3)
+}
+
+/*==================================================
+                  SOCIAL-ICON
+====================================================*/
+  .list-social-icons a {
+      color: #fff;
+      opacity: 0.7;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+
+  .list-social-icons a:hover {
+      opacity: 1;
+  }
+
+  .list-social-icons a .fa-lg {
+      font-size: 1.75rem;
+  }
+
+  .list-icons {
+      font-size: 3rem;
+  }
+
+  .list-icons .list-inline-item i:hover {
+      color: #2196f3;
+  }
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.content-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.content-section-heading h2 {
+  font-size: 3rem;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*==================================================
+                    ABOUT
+====================================================*/
+
+#about p {
+  max-width: 1000px;
+}
+#about li {
+  max-width: 1000px;
+}
+/*==================================================
+                    EXPERIENCE
+====================================================*/
+  #experience {
+    background: #383838;
+    color: #fff;
+  }
+
+  #experience .card h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: none;
+    color: inherit;
+  }
+
+  .work-icon{
+    border:3px solid #eee;
+    border-radius:50%;display:inline-block;
+    font-size:56px;width:180px;
+    height:180px;
+    line-height:136px;
+    vertical-align:middle;
+    text-align:center;
+    background-color: white;
+  }
+
+  #experience .card h3{
+    font-family: 'Helvetica Neue', Helvetica;
+    text-transform: none;
+    color: inherit;
+  }
+
+  #experience .card {
+    font-family: 'Open Sans', serif;
+    background: rgba(58, 58, 58, 0.8);
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25)
+  }
+
+  #experience .card:hover {
+    background: rgba(58, 58, 58, 1);
+  }
+
+  #experience p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.4
+  }
+
+  #experience p b {
+    font-weight: 700;
+  }
+
+  .experience-cover h2{
+  font-family: 'Helvetica Neue', Helvetica;
+ }
+
+/*====================================================
+                      PUBLICATIONS
+======================================================*/
+
+#publications h5 {
+  font-family: "Noto Sans", "Source Sans Pro";
+}
+
+img.paper {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-right: 1.0em;
+    /* float: left; */
+    height: auto;
+    /* max-width: 350px; */
+    padding: 0;
+    margin-left: -15px;
+    margin: 0 auto 0.5em auto;
+}
+
+.pub {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.pub .col-md-7 {
+  padding-left: 30px;
+}
+
+.pubj {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+
+.puba {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.publ ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publ li {
+  border: 1px solid #CCC;
+  padding: 5px;
+  margin: 5px 2px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.pubm {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.pubm a {
+  color: rgba(177, 4, 4, 1)
+}
+
+ /*====================================================
+                   PROJECTS
+======================================================*/
+
+  #projects {
+    background: #f5f5f5;
+  }
+
+  #projects .card h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: none;
+    color: inherit;
+  }
+
+  #projects .card h3{
+    font-family: 'Helvetica Neue', Helvetica;
+    text-transform: none;
+    color: inherit;
+  }
+
+  #projects .card h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: none;
+    color: #555;
+  }
+
+  #projects .resume-date {
+    text-align: end;
+    margin-top: auto;
+    color: #818182;
+  }
+
+  #projects .link {
+    /* position: relative; */
+    /* top: -0.5rem;
+    left: 0.1rem; */
+  }
+
+  #projects .foot {
+    margin-top: auto;
+  }
+ /*====================================================
+                   AWARDS
+======================================================*/
+
+.award {
+  line-height: 1.9;
+}
